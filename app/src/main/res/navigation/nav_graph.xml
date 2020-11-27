@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/products_list_dest">
+
+    <fragment
+        android:id="@+id/products_list_dest"
+        android:name="com.example.mobapp.ui.productslist.fragment.ProductsListFragment"
+        android:label="@string/product_list_title"
+        tools:layout="@layout/products_list_layout">
+
+        <action
+            android:id="@+id/from_products_list_to_details_action"
+            app:destination="@id/product_details_dest" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/product_details_dest"
+        android:name="com.example.mobapp.ui.productdetails.fragment.ProductDetailsFragment"
+        android:label="@string/product_details_title"
+        tools:layout="@layout/product_details_layout">
+
+        <argument
+            android:name="product"
+            app:argType="com.example.mobapp.data.models.Product" />
+
+    </fragment>
+</navigation>

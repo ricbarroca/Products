@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">mobapp</string>
+
+    <string name="product_details_title">Product Details</string>
+    <string name="product_list_title">Product List</string>
+
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="retry">Retry</string>
+
+
+</resources>
